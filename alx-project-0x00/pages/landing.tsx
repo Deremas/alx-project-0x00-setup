@@ -11,8 +11,19 @@ const Landing: React.FC = () => {
       <Card />
       <Card />
       <Card />
-      <Button title="Small Rounded" size="small" shape="rounded-sm" /> <br />
-      <Button title="Medium Rounded" size="medium" shape="rounded-md" />
+      <Button
+        title="Small Rounded"
+        size="small"
+        shape="rounded-sm"
+        styles="rounded-sm"
+      />{" "}
+      <br />
+      <Button
+        title="Medium Rounded"
+        size="medium"
+        shape="rounded-md"
+        styles="rounded-md"
+      />
       <br />
       <Button
         title="Large Rounded"
