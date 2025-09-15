@@ -1,26 +1,18 @@
 import React from "react";
 
-interface ButtonProps {
-  title: string;
-  size?: "small" | "medium" | "large";
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
-}
+import { ButtonProps } from "@/interfaces";
 
-const Button: React.FC<ButtonProps> = ({
-  title,
-  size = "medium",
-  shape = "rounded-md",
-}) => {
+const Button: React.FC<ButtonProps> = ({ title, size, shape, styles }) => {
   const classes =
     size === "small"
-      ? "px-2 py-1 text-sm"
-      : size === "large"
-      ? "px-4 py-2 text-lg"
-      : "px-3 py-1 text-md";
+      ? "px-3 py-1 text-sm"
+      : size === "medium"
+      ? "px-4 py-2 text-md"
+      : "px-5 py-3 text-lg";
   return (
     <>
       <button
-        className={`${classes} ${shape} bg-blue-500 text-white hover:bg-blue-700`}
+        className={`${classes} ${shape} ${styles} bg-blue-500 text-white hover:bg-blue-700`}
       >
         {title}
       </button>

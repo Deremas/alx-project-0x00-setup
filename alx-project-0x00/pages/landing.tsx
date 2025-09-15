@@ -14,7 +14,12 @@ const Landing: React.FC = () => {
       <Button title="Small Rounded" size="small" shape="rounded-sm" /> <br />
       <Button title="Medium Rounded" size="medium" shape="rounded-md" />
       <br />
-      <Button title="Large Rounded" size="large" shape="rounded-full" />
+      <Button
+        title="Large Rounded"
+        size="large"
+        shape="rounded-full"
+        styles="rounded-lg"
+      />
     </>
   );
 };
